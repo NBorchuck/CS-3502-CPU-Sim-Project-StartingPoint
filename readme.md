@@ -1,6 +1,6 @@
 # CPU-Simulator using Windows Forms
 
-This project provides a Windows Forms application that demonstrates common CPU scheduling algorithms through an interactive graphical interface. Each algorithm prompts for basic input and displays the resulting waiting or turnaround times using message boxes and on-screen tables.
+This project provides a Windows Forms application that demonstrates common CPU scheduling algorithms through an interactive graphical interface. Process data is entered via a DataGrid, and results are displayed in formatted tables showing waiting times, turnaround times, and other scheduling metrics.
 
 **Fork maintained by Chris Regan** - Original creator: Francis (used with permission)
 
@@ -8,14 +8,37 @@ This project provides a Windows Forms application that demonstrates common CPU s
 
 The simulator is functional but still a work in progress. Currently the following scheduling strategies are available:
 
-| Algorithm | Method | Notes |
-|-----------|--------|-------|
-| First Come First Serve | `Algorithms.RunFirstComeFirstServe` | Processes are executed in order of arrival. |
-| Shortest Job First | `Algorithms.RunShortestJobFirst` | Jobs are sorted by burst time before execution. |
-| Priority Scheduling | `Algorithms.RunPriorityScheduling` | User supplies a priority value for each job. |
-| Round Robin | `Algorithms.RunRoundRobin` | Requires a quantum time parameter. |
+| Algorithm | Implementation Method | Location |
+|-----------|----------------------|----------|
+| First Come First Serve (FCFS) | `RunFCFSAlgorithm()` | CpuSchedulerForm.cs:247 |
+| Shortest Job First (SJF) | `RunSJFAlgorithm()` | CpuSchedulerForm.cs:283 |
+| Priority Scheduling | `RunPriorityAlgorithm()` | CpuSchedulerForm.cs:331 |
+| Round Robin (RR) | `RunRoundRobinAlgorithm()` | CpuSchedulerForm.cs:379 |
 
-Additional algorithms can easily be added by extending `Algorithms.cs`.
+### Adding Custom Algorithms
+
+Students: You are encouraged to research and implement additional CPU scheduling algorithms beyond those provided. This might include SRTF, MLFQ, HRRN, CFS, EDF, or any other scheduling algorithm you discover in your research.
+
+To add your own scheduling algorithm:
+
+1. Open `CpuSchedulerForm.cs` and find the TODO section around line 1296
+2. Create a new method following this pattern:
+
+   ```csharp
+   private List<SchedulingResult> RunYourAlgorithm(List<ProcessData> processes)
+   {
+       var results = new List<SchedulingResult>();
+       // Your algorithm implementation here
+       return results;
+   }
+   ```
+
+3. Use `GetProcessDataFromGrid()` to access process data from the UI
+4. Add a button click handler that calls your algorithm and displays results using `DisplaySchedulingResults()`
+5. Add a button to the UI (see detailed instructions in the TODO comments or main.tex Section 4.4)
+6. See existing implementations (FCFS, SJF, Priority, RR) for complete examples
+
+**Detailed instructions** for adding algorithms and buttons can be found in the TODO comments at line 1296 in CpuSchedulerForm.cs.
 
 ## Requirements
 
@@ -84,10 +107,12 @@ dotnet run --project CpuScheduler/CpuScheduler.csproj
 
 ## Usage
 
-1. Enter the desired number of processes
-2. Choose a scheduling algorithm from the interface
-3. The app will prompt for additional values as needed (burst time, priority, quantum time, etc.)
-4. View the results in the display table showing waiting times and turnaround times
+1. Navigate to the **Scheduler** panel using the sidebar
+2. Enter the desired number of processes and click "Set Process Count"
+3. Edit process data directly in the DataGrid (Burst Time, Priority, Arrival Time)
+4. Optionally use "Generate Random" to populate with random values or "Load Example" for preset scenarios
+5. Click any algorithm button (FCFS, SJF, Priority, or Round Robin) to run the simulation
+6. View detailed results in the **Results** panel including waiting times, turnaround times, and summary statistics
 
 ### License
 

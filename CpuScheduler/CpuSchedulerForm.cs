@@ -1293,6 +1293,130 @@ Instructions:
             }
         }
 
+        // ========================================================================================================
+        // TODO: STUDENTS - ADD YOUR CUSTOM SCHEDULING ALGORITHMS HERE
+        // ========================================================================================================
+        //
+        // To add a new scheduling algorithm to this simulator, follow these steps:
+        //
+        // STEP 1: IMPLEMENT YOUR ALGORITHM
+        // ---------------------------------
+        // Create a new method following this pattern (example: SRTF - Shortest Remaining Time First):
+        //
+        // private List<SchedulingResult> RunSRTFAlgorithm(List<ProcessData> processes)
+        // {
+        //     var results = new List<SchedulingResult>();
+        //     // Your algorithm logic here
+        //     // Access: process.ProcessID, process.BurstTime, process.Priority, process.ArrivalTime
+        //     return results;
+        // }
+        //
+        // Look at RunFCFSAlgorithm() (line 247), RunSJFAlgorithm() (line 283),
+        // RunPriorityAlgorithm() (line 331), or RunRoundRobinAlgorithm() (line 379) for examples.
+        //
+        // STEP 2: CREATE BUTTON CLICK HANDLER
+        // ------------------------------------
+        // Add a click event handler method:
+        //
+        // private void SRTFButton_Click(object sender, EventArgs e)
+        // {
+        //     var processData = GetProcessDataFromGrid();
+        //     if (processData.Count > 0)
+        //     {
+        //         var results = RunSRTFAlgorithm(processData);
+        //         DisplaySchedulingResults(results, "SRTF - Shortest Remaining Time First");
+        //         ShowPanel(resultsPanel);
+        //         sidePanel.Height = btnDashBoard.Height;
+        //         sidePanel.Top = btnDashBoard.Top;
+        //     }
+        //     else
+        //     {
+        //         MessageBox.Show("Please set process count first.", "No Process Data",
+        //             MessageBoxButtons.OK, MessageBoxIcon.Warning);
+        //     }
+        // }
+        //
+        // STEP 3: ADD BUTTON TO UI
+        // ------------------------
+        //
+        // OPTION A - Using Visual Studio Designer (EASIEST):
+        // 1. Right-click CpuSchedulerForm.cs in Solution Explorer
+        // 2. Select "View Designer" (or press Shift+F7)
+        // 3. Open Toolbox (Ctrl+Alt+X) → drag a Button onto schedulerPanel
+        // 4. Position it near other algorithm buttons (FCFS, SJF, Priority, RR)
+        // 5. Click the button, press F4 to open Properties:
+        //    - (Name): btnSRTF
+        //    - Text: "SRTF"
+        //    - Font: Segoe UI, 10pt
+        //    - BackColor: Choose a color (or use AntiqueWhite like others)
+        // 6. Double-click the button to create click event (or use Events tab in Properties)
+        // 7. VS will create the event handler - copy your code from STEP 2 into it
+        //
+        // OPTION B - Manually Edit CpuSchedulerForm.Designer.cs (VS Code users):
+        // 1. Open CpuSchedulerForm.Designer.cs
+        // 2. Add button field at the top with other buttons:
+        //    private System.Windows.Forms.Button btnSRTF;
+        //
+        // 3. In InitializeComponent() method, find where buttons are initialized and add:
+        //    this.btnSRTF = new System.Windows.Forms.Button();
+        //
+        // 4. Below button initialization section, add button properties:
+        //    this.btnSRTF.BackColor = System.Drawing.Color.AntiqueWhite;
+        //    this.btnSRTF.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+        //    this.btnSRTF.Font = new System.Drawing.Font("Segoe UI", 10F);
+        //    this.btnSRTF.Location = new System.Drawing.Point(20, 300);  // Adjust position!
+        //    this.btnSRTF.Name = "btnSRTF";
+        //    this.btnSRTF.Size = new System.Drawing.Size(150, 40);
+        //    this.btnSRTF.TabIndex = 10;  // Increment from last button
+        //    this.btnSRTF.Text = "SRTF";
+        //    this.btnSRTF.UseVisualStyleBackColor = false;
+        //    this.btnSRTF.Click += new System.EventHandler(this.SRTFButton_Click);
+        //
+        // 5. Add button to schedulerPanel's controls (find similar line for other buttons):
+        //    this.schedulerPanel.Controls.Add(this.btnSRTF);
+        //
+        // STEP 4: APPLY STYLING (OPTIONAL BUT RECOMMENDED)
+        // -------------------------------------------------
+        // To match the app's modern look:
+        //
+        // 1. In CpuSchedulerForm_Load() method (around line 976), add:
+        //    ApplyRoundedCorners(btnSRTF);
+        //
+        // 2. In ApplyDarkTheme() method (around line 1062), add:
+        //    ApplyDarkThemeToSchedulerButton(btnSRTF);
+        //
+        // 3. In ApplyLightTheme() method (around line 1134), add:
+        //    btnSRTF.BackColor = Color.AntiqueWhite;  // Or your chosen color
+        //    btnSRTF.ForeColor = SystemColors.ControlText;
+        //
+        // STEP 5: TEST YOUR IMPLEMENTATION
+        // ---------------------------------
+        // 1. Build and run the application (F5)
+        // 2. Navigate to Scheduler panel
+        // 3. Set process count and enter/generate data
+        // 4. Click your new algorithm button
+        // 5. Check Results panel for correct output
+        // 6. Test with different workloads (small, medium, large datasets)
+        // 7. Verify metrics calculations are correct
+        //
+        // COMMON MISTAKES TO AVOID:
+        // -------------------------
+        // ✗ Forgetting to add button to schedulerPanel.Controls
+        // ✗ Event handler name doesn't match Click += assignment
+        // ✗ Not saving Designer file before running
+        // ✗ Button positioned off-screen or overlapping other buttons
+        // ✗ Forgetting to apply theme colors (button won't change with dark/light mode)
+        //
+        // HELPFUL TIPS:
+        // -------------
+        // • Use GetProcessDataFromGrid() to get data instead of prompting users
+        // • Use DisplaySchedulingResults() to show results consistently
+        // • Test with the built-in CSV export to verify your calculations
+        // • Look at existing algorithms for patterns and best practices
+        // • Don't modify the existing algorithm implementations - add your own
+        //
+        // QUESTIONS? Check the main.tex project document Section 4 for detailed instructions!
+        // ========================================================================================================
 
     }
 
