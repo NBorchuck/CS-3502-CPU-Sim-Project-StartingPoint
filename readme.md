@@ -14,6 +14,8 @@ The simulator is functional but still a work in progress. Currently the followin
 | Shortest Job First | `Algorithms.RunShortestJobFirst` | Jobs are sorted by burst time before execution. |
 | Priority Scheduling | `Algorithms.RunPriorityScheduling` | User supplies a priority value for each job. |
 | Round Robin | `Algorithms.RunRoundRobin` | Requires a quantum time parameter. |
+| Highest Response Ratio First | `CpuSchedulerForm.runHRRNAlgorithm` | Jobs are selected by response ratio. |
+| Lottery | `CpuSchedulerForm.runHRRNAlgorithm` | Jobs are selected randomly. |
 
 Additional algorithms can easily be added by extending `Algorithms.cs`.
 
