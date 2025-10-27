@@ -1,0 +1,137 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\mborc\\source\\repos\\CS-3502-CPU-Sim-Project-StartingPoint\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6954F540-2148-4D2F-879A-BE82576B1083}|CpuScheduler\\CpuScheduler.csproj|c:\\users\\mborc\\source\\repos\\cs-3502-cpu-sim-project-startingpoint\\cpuscheduler\\cpuschedulerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6954F540-2148-4D2F-879A-BE82576B1083}|CpuScheduler\\CpuScheduler.csproj|solutionrelative:cpuscheduler\\cpuschedulerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6954F540-2148-4D2F-879A-BE82576B1083}|CpuScheduler\\CpuScheduler.csproj|c:\\users\\mborc\\source\\repos\\cs-3502-cpu-sim-project-startingpoint\\cpuscheduler\\cpuschedulerform.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
+      "RelativeMoniker": "D:0:0:{6954F540-2148-4D2F-879A-BE82576B1083}|CpuScheduler\\CpuScheduler.csproj|solutionrelative:cpuscheduler\\cpuschedulerform.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6954F540-2148-4D2F-879A-BE82576B1083}|CpuScheduler\\CpuScheduler.csproj|c:\\users\\mborc\\source\\repos\\cs-3502-cpu-sim-project-startingpoint\\cpuscheduler\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6954F540-2148-4D2F-879A-BE82576B1083}|CpuScheduler\\CpuScheduler.csproj|solutionrelative:cpuscheduler\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6954F540-2148-4D2F-879A-BE82576B1083}|CpuScheduler\\CpuScheduler.csproj|c:\\users\\mborc\\source\\repos\\cs-3502-cpu-sim-project-startingpoint\\cpuscheduler\\helper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6954F540-2148-4D2F-879A-BE82576B1083}|CpuScheduler\\CpuScheduler.csproj|solutionrelative:cpuscheduler\\helper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6954F540-2148-4D2F-879A-BE82576B1083}|CpuScheduler\\CpuScheduler.csproj|c:\\users\\mborc\\source\\repos\\cs-3502-cpu-sim-project-startingpoint\\cpuscheduler\\cpuschedulerform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6954F540-2148-4D2F-879A-BE82576B1083}|CpuScheduler\\CpuScheduler.csproj|solutionrelative:cpuscheduler\\cpuschedulerform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6954F540-2148-4D2F-879A-BE82576B1083}|CpuScheduler\\CpuScheduler.csproj|c:\\users\\mborc\\source\\repos\\cs-3502-cpu-sim-project-startingpoint\\cpuscheduler\\cpuschedulerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{6954F540-2148-4D2F-879A-BE82576B1083}|CpuScheduler\\CpuScheduler.csproj|solutionrelative:cpuscheduler\\cpuschedulerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6954F540-2148-4D2F-879A-BE82576B1083}|CpuScheduler\\CpuScheduler.csproj|c:\\users\\mborc\\source\\repos\\cs-3502-cpu-sim-project-startingpoint\\cpuscheduler\\algorithms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6954F540-2148-4D2F-879A-BE82576B1083}|CpuScheduler\\CpuScheduler.csproj|solutionrelative:cpuscheduler\\algorithms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CpuSchedulerForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\mborc\\source\\repos\\CS-3502-CPU-Sim-Project-StartingPoint\\CpuScheduler\\CpuSchedulerForm.cs",
+              "RelativeDocumentMoniker": "CpuScheduler\\CpuSchedulerForm.cs",
+              "ToolTip": "C:\\Users\\mborc\\source\\repos\\CS-3502-CPU-Sim-Project-StartingPoint\\CpuScheduler\\CpuSchedulerForm.cs [Design]*",
+              "RelativeToolTip": "CpuScheduler\\CpuSchedulerForm.cs [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-25T21:50:53.021Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CpuSchedulerForm.cs",
+              "DocumentMoniker": "C:\\Users\\mborc\\source\\repos\\CS-3502-CPU-Sim-Project-StartingPoint\\CpuScheduler\\CpuSchedulerForm.cs",
+              "RelativeDocumentMoniker": "CpuScheduler\\CpuSchedulerForm.cs",
+              "ToolTip": "C:\\Users\\mborc\\source\\repos\\CS-3502-CPU-Sim-Project-StartingPoint\\CpuScheduler\\CpuSchedulerForm.cs*",
+              "RelativeToolTip": "CpuScheduler\\CpuSchedulerForm.cs*",
+              "ViewState": "AgIAAFUCAAAAAAAAAAApwGQCAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-25T21:02:54.576Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CpuSchedulerForm.resx",
+              "DocumentMoniker": "C:\\Users\\mborc\\Source\\Repos\\CS-3502-CPU-Sim-Project-StartingPoint\\CpuScheduler\\CpuSchedulerForm.resx",
+              "RelativeDocumentMoniker": "CpuScheduler\\CpuSchedulerForm.resx",
+              "ToolTip": "C:\\Users\\mborc\\Source\\Repos\\CS-3502-CPU-Sim-Project-StartingPoint\\CpuScheduler\\CpuSchedulerForm.resx",
+              "RelativeToolTip": "CpuScheduler\\CpuSchedulerForm.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2025-10-25T20:59:38.597Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CpuSchedulerForm.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\mborc\\Source\\Repos\\CS-3502-CPU-Sim-Project-StartingPoint\\CpuScheduler\\CpuSchedulerForm.Designer.cs",
+              "RelativeDocumentMoniker": "CpuScheduler\\CpuSchedulerForm.Designer.cs",
+              "ToolTip": "C:\\Users\\mborc\\Source\\Repos\\CS-3502-CPU-Sim-Project-StartingPoint\\CpuScheduler\\CpuSchedulerForm.Designer.cs",
+              "RelativeToolTip": "CpuScheduler\\CpuSchedulerForm.Designer.cs",
+              "ViewState": "AgIAAHECAAAAAAAAAAD4v34CAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-25T20:59:34.61Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Helper.cs",
+              "DocumentMoniker": "C:\\Users\\mborc\\source\\repos\\CS-3502-CPU-Sim-Project-StartingPoint\\CpuScheduler\\Helper.cs",
+              "RelativeDocumentMoniker": "CpuScheduler\\Helper.cs",
+              "ToolTip": "C:\\Users\\mborc\\source\\repos\\CS-3502-CPU-Sim-Project-StartingPoint\\CpuScheduler\\Helper.cs",
+              "RelativeToolTip": "CpuScheduler\\Helper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-25T20:36:14.369Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\mborc\\source\\repos\\CS-3502-CPU-Sim-Project-StartingPoint\\CpuScheduler\\Program.cs",
+              "RelativeDocumentMoniker": "CpuScheduler\\Program.cs",
+              "ToolTip": "C:\\Users\\mborc\\source\\repos\\CS-3502-CPU-Sim-Project-StartingPoint\\CpuScheduler\\Program.cs",
+              "RelativeToolTip": "CpuScheduler\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-25T20:35:57.57Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Algorithms.cs",
+              "DocumentMoniker": "C:\\Users\\mborc\\source\\repos\\CS-3502-CPU-Sim-Project-StartingPoint\\CpuScheduler\\Algorithms.cs",
+              "RelativeDocumentMoniker": "CpuScheduler\\Algorithms.cs",
+              "ToolTip": "C:\\Users\\mborc\\source\\repos\\CS-3502-CPU-Sim-Project-StartingPoint\\CpuScheduler\\Algorithms.cs",
+              "RelativeToolTip": "CpuScheduler\\Algorithms.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAALwBAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-25T20:35:52.712Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

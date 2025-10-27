@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Windows.Forms;
 
 namespace CpuScheduler
@@ -419,9 +420,116 @@ namespace CpuScheduler
                 MessageBox.Show("Average turnaround time for " + processCount + " processes: " + averageTurnaroundTime + " sec(s)", string.Empty, MessageBoxButtons.OK);
             }
         }
+        /// <summary>
+        /// Executes the Shortest Remaining Time First scheduling algorithm.
+        /// </summary>
+        /// <param name="processCountInput">The number of processes to schedule.</param>
+        public static void SRTF(string processCountInput)
+        {
+            if (!int.TryParse(processCountInput, out int processCount) || processCount <= 0)
+            {
+                MessageBox.Show("Invalid number of processes", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
 
-        // TODO: Add new scheduling algorithms below. Use the above methods as
-        // examples when expanding functionality.
+            double[] burstTimes = new double[processCount];
+            double[] waitingTimes = new double[processCount];
+            double[] sortedBurstTimes = new double[processCount];
+            double totalWaitingTime = 0.0;
+            double averageWaitingTime;
+            int x, i;
+            double temp = 0.0;
+            bool found = false;
+
+            DialogResult result = MessageBox.Show(
+                "Shortest Time Remaining First Scheduling",
+                string.Empty,
+                MessageBoxButtons.YesNo,
+                    MessageBoxIcon.Information);
+
+            if (result == DialogResult.Yes)
+            {
+                for (i = 0; i < processCount; i++)
+                {
+                    string input =
+                        Microsoft.VisualBasic.Interaction.InputBox("Enter burst time: ",
+                                                           "Burst time for P" + (i + 1),
+                                                           "",
+                                                           -1, -1);
+
+                    if (!double.TryParse(input, out burstTimes[i]) || burstTimes[i] < 0)
+                    {
+                        MessageBox.Show("Invalid burst time", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        return;
+                    }
+                }
+                for (i = 0; i < processCount; i++)
+                {
+                    sortedBurstTimes[i] = burstTimes[i];
+                }
+                for (x = 0; x <= processCount - 2; x++)
+                {
+                    for (i = 0; i <= processCount - 2; i++)
+                    {
+                        if (sortedBurstTimes[i] > sortedBurstTimes[i + 1])
+                        {
+                            temp = sortedBurstTimes[i];
+                            sortedBurstTimes[i] = sortedBurstTimes[i + 1];
+                            sortedBurstTimes[i + 1] = temp;
+                        }
+                    }
+                }
+                for (i = 0; i < processCount; i++)
+                {
+                    if (i == 0)
+                    {
+                        for (x = 0; x < processCount; x++)
+                        {
+                            if (sortedBurstTimes[i] == burstTimes[x] && found == false)
+                            {
+                                waitingTimes[i] = 0;
+                                MessageBox.Show(
+                                    "Waiting time for P" + (x + 1) + " = " + waitingTimes[i],
+                                    "Waiting time:",
+                                    MessageBoxButtons.OK,
+                                    MessageBoxIcon.None);
+                                burstTimes[x] = 0;
+                                found = true;
+                            }
+                        }
+                        found = false;
+                    }
+                    else
+                    {
+                        for (x = 0; x < processCount; x++)
+                        {
+                            if (sortedBurstTimes[i] == burstTimes[x] && found == false)
+                            {
+                                waitingTimes[i] = waitingTimes[i - 1] + sortedBurstTimes[i - 1];
+                                MessageBox.Show(
+                                    "Waiting time for P" + (x + 1) + " = " + waitingTimes[i],
+                                    "Waiting time",
+                                    MessageBoxButtons.OK,
+                                    MessageBoxIcon.None);
+                                burstTimes[x] = 0;
+                                found = true;
+                            }
+                        }
+                        found = false;
+                    }
+                }
+                for (i = 0; i < processCount; i++)
+                {
+                    totalWaitingTime = totalWaitingTime + waitingTimes[i];
+                }
+                averageWaitingTime = totalWaitingTime / processCount;
+                MessageBox.Show(
+                    "Average waiting time for " + processCount + " processes = " + averageWaitingTime + " sec(s)",
+                    "Average waiting time",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Information);
+            }
+        }
     }
 }
 
